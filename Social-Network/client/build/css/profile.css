@@ -1,0 +1,657 @@
+.leftfixedprofile
+{
+	width: 790px;
+	height: 900px;
+	background-color: #F3F3F3;
+	float:left;
+}
+.Edit .row div{
+	display: inline-block;
+}
+.bubble
+{
+	left: 46%;
+	top: 12px;
+	position: absolute;
+	z-index: 8888;
+}
+@font-face {
+	src: url(../fonts/Nabila.ttf);
+	font-family: iCiel Nabila
+}
+@font-face {
+	src: url(../fonts/pala.ttf);
+	font-family: Palatino Linotype
+}
+h2, h4, p, label, input {
+	font-family: Palatino Linotype
+}
+.Edit h2 {
+	margin-top: 40px;
+	font-family:  "iCiel Nabila";
+}
+
+.Edit .select-gender{
+	width: 69px;
+	height: 28px;
+}
+form .row {
+	display: block;
+	padding: 7px 8px;
+	margin-bottom: 7px;
+	width: 400px;
+}
+form .row:hover {
+	background: #f1f7fa;
+}
+
+form label {
+	display: inline-block;
+	font-size: 1.2em;
+	font-weight: bold;
+	width: 120px;
+	padding: 6px 0;
+	color: #464646;
+	vertical-align: top;
+}
+form .req { color: #ca5354; }
+
+form .note {
+	font-size: 1.2em;
+	line-height: 1.33em;
+	font-weight: normal;
+	padding: 2px 7px;
+	margin-bottom: 10px;
+}
+
+form input:focus { outline: none; }
+
+
+form .txt-edit {
+	display: inline-block;
+	padding: 8px 9px;
+	padding-right: 30px;
+	width: 222px;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 17px;
+	font-weight: normal;
+	color: #898989;
+	background-color: #f0f0f0;
+	border: 1px solid #ccc;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.75);
+	box-sizing: content-box;
+	border-radius: 3px;
+	box-shadow: 0 1px 2px rgba(25, 25, 25, 0.25) inset, -1px 1px #fff;
+	transition: all 0.3s linear;
+}
+
+
+form .txt-edit:focus {
+	width: 222px;
+	color: #545454;
+	background-color: #fff;
+	background-position: 110% center;
+	background-repeat: no-repeat;
+	border-color: #059;
+	box-shadow: 0 1px 4px -1px #a8a8a8 inset, 0 1px rgba(255, 255, 255, 0.6), 0 0 11px rgba(70, 100, 200, 0.7);
+}
+
+form .txt-edit:valid {
+	background-color: #deecda;
+	background-position: 98% center;
+	background-repeat: no-repeat;
+	color: #7d996e;
+	border: 1px solid #95bc7d;
+}
+
+form .txt-edit:focus:valid{
+
+	box-shadow: 0 1px 4px -1px #a8a8a8 inset, 0 1px rgba(255, 255, 255, 0.6), 0 0 11px rgba(120, 200, 70, 0.7);
+}
+#submitbtn {
+	height: 70px;
+	width: 275px;
+	padding: 0;
+	cursor: pointer;
+	font-family: 'Oxygen', Arial, sans-serif;
+	font-size: 2.0em;
+	color: #0a528f;
+	text-shadow: 1px 1px 0 rgba(255,255,255,0.65);
+	border-width: 1px;
+	border-style: solid;
+	border-color: #317bd6 #3784e3 #2d74d5 #3774e3;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #4581e5;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#6faefd), to(#4581e5));
+	background-image: -webkit-linear-gradient(top, #6faefd, #4581e5);
+	background-image: -moz-linear-gradient(top, #6faefd, #4581e5);
+	background-image: -ms-linear-gradient(top, #6faefd, #4581e5);
+	background-image: -o-linear-gradient(top, #6faefd, #4581e5);
+	background-image: linear-gradient(top, #6faefd, #4581e5);
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.4), 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	transition: all 0.3s linear;
+}
+#submitbtn:hover, #submitbtn:focus {
+
+	box-shadow: 0 0 15px rgba(70, 100, 200, 0.9);
+}
+
+#submitbtn:active {
+
+	box-shadow: 0 0 15px rgba(70, 100, 200, 0.9), 0 1px 3px rgba(0,0,0,0.4) inset;
+}
+.Edit .row .select-birthday{
+	width: 84px;
+	height: 31px;
+	margin-right: 4px;
+	font-family: 'Palatino Linotype', sans-serif;
+	color: #898989;
+	background-color: #f0f0f0;
+	border: 1px solid #ccc;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.75);
+	border-radius: 3px;
+	transition: all 0.3s linear;
+}
+input[type=radio]{
+	margin-top: 12px;
+	margin-right: 12px;
+}
+.Edit .row .label-sex{
+	width: 75px !important;
+}
+.dot
+{
+  background-color: #bbb;
+  border-radius: 50%;
+  height: 15px;
+  width:15px;
+  margin:0 4px;
+  display: inline-block;
+}
+
+.active, .dot:hover
+{
+  background-color: #717171;
+}
+
+.slideshowcontainer
+{
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	height: 360px;
+}
+
+.chooseslide
+{
+	position: absolute;
+	right: 14px;
+	top: 7px;
+	z-index:7777;
+	width: 20px;
+	opacity: 0;
+}
+
+.slideEdit
+{
+	cursor: pointer;
+	transform: scaleX(-1);
+	position:absolute;
+	right: 10px;
+	font-size: 26px;
+	padding: 0px;
+	margin: 0px;
+	z-index: 7666;
+	color: blue;
+}
+
+.chooseslide:hover ~ .slideEdit
+{
+	color: black;
+	opacity: 1;
+}
+
+/*change profile pic*/
+.chooseslide1
+{
+	position: absolute;
+	top: 38%;
+	right: 15px;
+	z-index:7777;
+	width: 20px;
+	opacity: 0;
+}
+
+.sidebarleftprofile .slideEdit1
+{
+	cursor: pointer;
+	transform: scaleX(-1);
+	position:absolute;
+	top: 35%;
+	right: 13px;
+	font-size: 26px;
+	padding: 0px;
+	margin: 0px;
+	z-index: 7666;
+	color: blue;
+}
+
+
+.chooseslide1:hover ~ .slideEdit1
+{
+	color: black;
+}
+
+
+.slideshowcontainer .singleslide img
+{
+	width: 100%;
+	height: 360px;
+}
+
+.singleslide
+{
+  width: 100%;
+  display:none;
+  animation: 1s fade;
+}
+
+@keyframes fade
+{
+  from
+  {
+    opacity: 0.2;
+    position: relative;
+    left: 100%;
+    width:0%;
+  }
+  to
+  {
+    opacity: 1;
+    position: relative;
+    width:100%;
+    left:0%;
+  }
+}
+
+.slideshowcontainer .singleslide .number
+{
+	position: absolute;
+	padding: 10px;
+	font-size: 18px;
+	font-family: verdana;
+	color: rgba(0,0,0,0.5);
+}
+
+.prev, .next
+{
+	cursor: pointer;
+	position: absolute;
+	top: 45%;
+	font-size: 26px;
+	font-weight: bold;
+	padding: 10px;
+    transition: all 0.5s ease-in-out;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.next
+{
+	right: 0px;
+	border-radius: 4px 0px 0px 4px;
+}
+
+.prev:hover, .next:hover
+{
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+
+.sidebarleftprofile
+{
+	width: 200px;
+	/*height: 100px;*/
+	background-color: transparent;
+	/*border: 1px solid #B7B7B7;*/
+/*	border-radius: 4px;*/
+/*	box-shadow: 2px 6px 6px #999999;*/
+	margin: 0px auto;
+	position: relative;
+	top: -80px;
+}
+
+
+.sidebarleftprofile img
+{
+	width: 150px;
+	height: 150px;
+	/*padding: 15px;*/
+	/*padding-bottom: 10px;*/
+	border-radius: 50%;
+	display: block;
+	margin: 4px auto 25px auto;
+}
+
+.sidebarleftprofile #sidename
+{
+	text-align: center;
+	position: relative;
+	top: -10px;
+	margin: 0px;
+	font-size: 16px;
+	font-family: "iCiel Nabila" !important;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.sidebarleftprofile p
+{
+	text-align: center;
+	margin: 0px;
+	font-size: 12px;
+	font-family: "verdana";
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #525252;
+}
+
+#nosociety
+{
+
+	color: #E91E63;
+	font-size: 24px;
+	font-family: "Comic Sans MS";
+	font-weight: bold;
+}
+
+#societyname a
+{
+	color: black;
+}
+
+#societyname a:hover
+{
+	color: #E91E63;
+}
+
+#logout
+{
+	color: #009688;
+	margin: 2px;
+	margin-top: 18px;
+	text-align: center;
+	background-color: #009688;
+}
+
+#logout a
+{
+	display: block;
+	color: white;
+	font-size: 14px;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 4px;
+}
+
+#logout a:hover
+{
+	color: black;
+}
+
+.line
+{
+	position: relative;
+	top: -50px;
+	width: 90%;
+}
+
+.line1
+{
+	width: 0px;
+	border: 0.5px solid rgba(0,0,0,0.4);
+	height: 20%;
+	position: relative;
+	top: -60px;
+}
+
+/*parent of timeline*/
+.timeline
+{
+	width: 100%;
+	padding: 45px;
+	/*height: 400px;*/
+	position: relative;
+	top: -58px;
+	background-color: #474e5d;
+    font-family: Helvetica, sans-serif;
+    margin-bottom: 45px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline:after
+{
+	content:'';
+	position: absolute;
+	left: 50%;
+	width: 6px;
+	background-color: white;
+	/*height: 100%;*/
+	top: 0px;
+	bottom: 0px;
+	margin-left: -3px;
+}
+
+/* Container around content */
+
+.container p
+{
+	margin: 4px;
+}
+
+/* The circles on the timeline  left*/
+.container::after
+{
+	content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -61px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* The circles on the timeline right */
+.right::after
+{
+	content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: -61px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+	left: -195px;
+}
+.container {
+	background-color: white;
+	padding: 10px 30px;
+	position: relative;
+	width: 42%;
+}
+/* Place the container to the right */
+.right
+{
+	left: 28%;
+}
+
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: -10px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: -10px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+h2
+{
+	color: #009688;
+}
+
+h4
+{
+	margin: 4px;
+}
+.tcontent p
+{
+	font-size: 15px;
+	margin: 4px;
+}
+
+.container .slideEdit2
+{	
+	cursor: pointer;
+	position: absolute;
+	transform: scaleX(-1);
+	font-size: 24px;
+	color: blue;
+	right: 5px;
+	top: -4px;
+}
+
+.container .slideEdit2:hover
+{
+	color: black;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 999998;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/*modal content to edit*/
+.Edit
+{
+
+	background-color: #fefefe;
+    margin: 0% auto 10% auto;
+    border: 1px solid #888;
+    width: 50%;
+    position: relative;
+
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.Edit form
+{
+	margin: 20px auto;
+	width: 40%;
+}
+
+/* Full-width input fields */
+
+
+/* Set a style for all buttons */
+
+
+
+
+/* Extra styles for the cancel button */
+
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0);} 
+    to {-webkit-transform: scale(1);}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0);} 
+    to {transform: scale(1);}
+}
+
+/*Add Zoom out animation*/
+.deanimate
+{
+	animation: animatezoomout 0.6s;
+}
+
+@keyframes animatezoomout
+{
+	from{transform: scale(1);}
+	to{transform: scale(0);}
+}
+
+/*----Removing the number increment in input --*/
+.Edit form input[type=number]::-webkit-inner-spin-button, 
+.Edit form input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+

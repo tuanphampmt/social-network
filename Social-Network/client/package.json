@@ -1,0 +1,66 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.19.2",
+    "bson": "^4.0.4",
+    "chart.js": "^2.9.3",
+    "classnames": "^2.2.6",
+    "cloudinary-react": "^1.5.0",
+    "emoji-picker-react": "^3.2.1",
+    "form-data": "^3.0.0",
+    "history": "^4.10.1",
+    "moment": "^2.27.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-alert": "^7.0.2",
+    "react-alert-template-basic": "^1.0.0",
+    "react-autocomplete": "^1.8.1",
+    "react-chartjs-2": "^2.9.0",
+    "react-dom": "^16.13.1",
+    "react-facebook-login": "^4.1.1",
+    "react-https-redirect": "^1.1.0",
+    "react-icons": "^3.11.0",
+    "react-js-pagination": "^3.0.3",
+    "react-moment": "^0.9.7",
+    "react-paginate": "^6.3.2",
+    "react-redux": "^7.2.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.1",
+    "recompose": "^0.30.0",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0",
+    "shards-react": "^1.0.3",
+    "shortid": "^2.2.15",
+    "socket.io-client": "^2.3.0",
+    "uuid": "^8.1.0"
+  },
+  "scripts": {
+    "start": "PORT=3000 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:4000"
+}
